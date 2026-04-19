@@ -107,7 +107,7 @@ public class GravityView extends View {
         c.y = cy - distance * 0.7f;
 
         // 让两个大天体以相反方向绕行。
-        float orbitalSpeed = (float) Math.sqrt((G * b.mass) / ((2f * distance) + 1f));
+        float orbitalSpeed = 0.5f * (float) Math.sqrt((G * b.mass) / ((2f * distance) + 1f));
         a.vx = 0f;
         a.vy = orbitalSpeed;
         b.vx = 0f;
